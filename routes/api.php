@@ -21,4 +21,6 @@ Route::middleware('api')->get('/contacts/{id}','ContactController@show');
 
 Route::middleware('api')->put('/contacts/{id}','ContactController@update');
 
+Route::middleware('api')->delete('/contacts/{id}','ContactController@destroy');
+
 
