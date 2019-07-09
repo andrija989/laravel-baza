@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use App\Models\Contact;
 
 class ContactController extends Controller
@@ -100,6 +101,6 @@ class ContactController extends Controller
 
         $contact->delete();
 
-        return response()->json('Korisnik je obrisan');
+        return response()->json(['success' => 'uspesno obrisano']);
     }
 }
